@@ -1,0 +1,72 @@
+form {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  form > h3 {
+    text-align: center; }
+  form > textarea {
+    resize: vertical;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 48px;
+    background-color: #504848;
+    color: #c5a8a8; }
+  form > input[type="submit"] {
+    width: 100px;
+    border: none;
+    background-color: #e05858;
+    padding: 12px;
+    color: #fcd0d0;
+    border-radius: 6px;
+    transition: .1s all; }
+    form > input[type="submit"]:hover {
+      opacity: .8;
+      cursor: pointer; }
+
+.thread > .comment {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px; }
+  .thread > .comment > div {
+    padding: 8px; }
+  .thread > .comment > .body {
+    border: 2px solid #c5a8a8;
+    padding-bottom: 32px;
+    position: relative;
+    flex: 1; }
+    .thread > .comment > .body > p {
+      margin: 0; }
+    .thread > .comment > .body > .created_at {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      color: #c5a8a8;
+      font-size: 12px;
+      font-style: italic; }
+  .thread > .comment > .author {
+    border: 2px solid #efb0b0;
+    height: fit-content; }
+    .thread > .comment > .author > span {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 8px;
+      display: inline-block;
+      color: #c9c1a6; }
+  .thread > .comment.original {
+    color: #f3e8c0; }
+    .thread > .comment.original > .body {
+      border-color: #d7c584; }
+      .thread > .comment.original > .body > .created_at {
+        color: #c9c1a6; }
+    .thread > .comment.original > .author {
+      border-color: #af9b54; }
+
+/*# sourceMappingURL=post.css.map */

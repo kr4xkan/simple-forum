@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  adminer:
+    image: adminer:latest
+    environment:
+      ADMINER_DEFAULT_DB_DRIVER: mysql
+      ADMINER_DEFAULT_DB_HOST: localhost
+      ADMINER_DEFAULT_DB_NAME: db
+      ADMINER_DESIGN: nette
+    ports:
+      - 9001:8080
+
+  db:
+    image: bitnami/mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'admin'
+      MYSQL_ROOT_PASSWORD: 'admin'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - db-vol:/bitnami/mysql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  chat-server:
+    build: ./chat-server
+    restart: always
+    ports:
+      - '9069:9069'
+
+  web:
+    build: .
+    ports:
+      - '8080:8080'
+
+volumes:
+  db-vol:

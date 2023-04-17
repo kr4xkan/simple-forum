@@ -1,0 +1,72 @@
+.side {
+  display: flex;
+  width: 100%;
+  gap: 32px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.post-list {
+  width: 60%;
+
+  > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > a {
+      text-decoration: none;
+      padding: 8px 10px;
+      background-color: #e05858;
+      color: white;
+      border-radius: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      transition: all .1s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  > .post {
+    text-decoration: none;
+    background-color: #504848;
+    margin-bottom: 12px;
+    padding: 8px;
+    color: #fcd0d0;
+    display: block;
+    position: relative;
+    transition: all .1s;
+    border-radius: 8px;
+
+    > .title {
+      font-weight: bold;
+    }
+
+    > .preview {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    > .date {
+      font-size: 10px;
+      margin-top: 8px;
+      opacity: .7;
+      font-style: italic;
+    }
+
+    > .author {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+}

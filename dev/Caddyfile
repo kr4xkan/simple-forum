@@ -1,0 +1,24 @@
+:8080 {
+	root * ./src
+
+	@path {
+		not path /static*
+		not path /ws*
+		path /*
+	}
+
+	handle_path /ws* {
+		reverse_proxy localhost:9069
+	}
+
+	handle_path /static* {
+		root * ./src/static
+		file_server
+	}
+
+	php_fastcgi 127.0.0.1:9000
+
+	header {
+		Server "KR4X Custom Server"
+	}
+}

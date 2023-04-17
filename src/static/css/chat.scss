@@ -1,0 +1,68 @@
+.chat {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  > .feed {
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+    > .scroll {
+      > .message {
+        height: 80px;
+        display: flex;
+        > p {
+          margin: 0;
+          display: flex;
+          align-items: center;
+        }
+        > .author {
+          border-top: 2px solid #724e44;
+          background-color: #5e4139;
+          justify-content: center;
+          width: 100px;
+        }
+        > .content {
+          border-top: 2px solid #5e4139;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  > form {
+    z-index: 2;
+    height: 10%;
+    display: flex;
+    > input[type="text"] {
+      background-color: #645c5c;
+      border: none;
+      height: 100%;
+      width: 80%;
+      outline: none;
+      color: #c9c1a6;
+      padding: 0 16px;
+    }
+    > input[type="submit"] {
+      background-color: #d7c584;
+      border: none;
+      height: 100%;
+      flex: 1;
+      transition: all .1s;
+      color: #857438;
+      text-transform: uppercase;
+      font-weight: bolder;
+
+      &:hover {
+        font-style: italic;
+        opacity: .8;
+        cursor: pointer;
+      }
+    }
+  }
+}

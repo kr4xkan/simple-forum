@@ -1,0 +1,24 @@
+:8080 {
+	root * /srv/app/src
+
+	@path {
+		not path /static*
+		not path /ws*
+		path /*
+	}
+
+	handle_path /ws* {
+		reverse_proxy chat-server:9069
+	}
+
+	handle_path /static* {
+		root * /srv/app/src/static
+		file_server
+	}
+
+	php_fastcgi unix//var/run/php-fpm.sock
+
+	header {
+		Server "KR4X Custom Server"
+	}
+}

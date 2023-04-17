@@ -1,0 +1,81 @@
+.content {
+  max-width: 700px; }
+  .content > .split {
+    display: flex; }
+    .content > .split > .sidebar {
+      background-color: #645c5c;
+      flex: 1;
+      height: fit-content; }
+      .content > .split > .sidebar > a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: #d7c584;
+        transition: all .1s; }
+        .content > .split > .sidebar > a:hover, .content > .split > .sidebar > a.active {
+          color: #d7a784; }
+    .content > .split > .main {
+      background-color: #504848;
+      width: 80%; }
+      .content > .split > .main > .view {
+        padding: 16px; }
+        .content > .split > .main > .view > h2 {
+          margin: 0; }
+        .content > .split > .main > .view > table {
+          width: 100%; }
+          .content > .split > .main > .view > table td, .content > .split > .main > .view > table th {
+            max-width: 300px; }
+          .content > .split > .main > .view > table td {
+            text-align: center; }
+            .content > .split > .main > .view > table td > a {
+              color: #d7c584; }
+            .content > .split > .main > .view > table td.actions {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              gap: 8px; }
+            .content > .split > .main > .view > table td > .truncate {
+              display: block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+            .content > .split > .main > .view > table td > .action {
+              background-color: #d78c8c;
+              padding: 4px 8px;
+              font-size: 10px;
+              border-radius: 6px;
+              color: #423b3b;
+              text-decoration: none;
+              transition: all .1s; }
+              .content > .split > .main > .view > table td > .action:hover {
+                opacity: .8;
+                cursor: pointer; }
+        .content > .split > .main > .view > .setting {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 16px; }
+          .content > .split > .main > .view > .setting > .label {
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 12px; }
+          .content > .split > .main > .view > .setting > form {
+            margin: 0; }
+            .content > .split > .main > .view > .setting > form > input {
+              background-color: #645c5c;
+              border: 0;
+              padding: 8px 12px;
+              color: #f3e8c0;
+              border-radius: 6px; }
+            .content > .split > .main > .view > .setting > form > input[type="submit"] {
+              background-color: #d78c8c;
+              padding: 8px 12px;
+              border-radius: 6px;
+              color: #423b3b;
+              text-decoration: none;
+              transition: all .1s; }
+              .content > .split > .main > .view > .setting > form > input[type="submit"]:hover {
+                opacity: .8;
+                cursor: pointer; }
+
+/*# sourceMappingURL=settings.css.map */

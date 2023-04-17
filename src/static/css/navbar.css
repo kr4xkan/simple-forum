@@ -1,0 +1,28 @@
+nav {
+  position: relative;
+  background-color: #cc8877;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: #332d2d;
+  z-index: 1; }
+  nav > .left > .title {
+    font-weight: bolder;
+    display: inline-block;
+    margin-right: 16px; }
+  nav > div > a {
+    text-decoration: none;
+    color: #efb0b0;
+    background-color: #aa4444;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all .1s; }
+    nav > div > a:hover {
+      color: #aa4444;
+      background-color: #efb0b0; }
+    nav > div > a.active {
+      color: #d7c584;
+      background-color: #857438; }
+
+/*# sourceMappingURL=navbar.css.map */

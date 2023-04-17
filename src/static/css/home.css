@@ -1,0 +1,53 @@
+.side {
+  display: flex;
+  width: 100%;
+  gap: 32px; }
+
+.sidebar {
+  flex: 1; }
+
+.post-list {
+  width: 60%; }
+  .post-list > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .post-list > .header > a {
+      text-decoration: none;
+      padding: 8px 10px;
+      background-color: #e05858;
+      color: white;
+      border-radius: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      transition: all .1s; }
+      .post-list > .header > a:hover {
+        opacity: .8; }
+  .post-list > .post {
+    text-decoration: none;
+    background-color: #504848;
+    margin-bottom: 12px;
+    padding: 8px;
+    color: #fcd0d0;
+    display: block;
+    position: relative;
+    transition: all .1s;
+    border-radius: 8px; }
+    .post-list > .post > .title {
+      font-weight: bold; }
+    .post-list > .post > .preview {
+      margin-top: 6px;
+      font-size: 12px; }
+    .post-list > .post > .date {
+      font-size: 10px;
+      margin-top: 8px;
+      opacity: .7;
+      font-style: italic; }
+    .post-list > .post > .author {
+      position: absolute;
+      bottom: 8px;
+      right: 8px; }
+    .post-list > .post:hover {
+      opacity: .9; }
+
+/*# sourceMappingURL=home.css.map */

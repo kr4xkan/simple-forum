@@ -1,0 +1,26 @@
+form {
+  width: 200px;
+  background-color: #423b3b;
+  padding: 32px;
+  border-radius: 8px;
+  margin: 0 auto; }
+  form > input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: #504848;
+    color: #c5a8a8; }
+    form > input:last-child {
+      margin-top: 16px;
+      margin-bottom: 0; }
+    form > input[type="submit"] {
+      background-color: #e05858;
+      padding: 12px;
+      color: #fcd0d0; }
+      form > input[type="submit"]:hover {
+        cursor: pointer; }
+
+/*# sourceMappingURL=login.css.map */
